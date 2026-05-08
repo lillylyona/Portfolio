@@ -18,8 +18,8 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; cursor: none; }
 
-.cursor { position:fixed; z-index:9999; pointer-events:none; width:8px; height:8px; border-radius:50%; background:var(--rose); top:0; left:0; transform:translate(-50%,-50%); }
-.cursor-ring { position:fixed; z-index:9998; pointer-events:none; width:36px; height:36px; border-radius:50%; border:1px solid rgba(201,123,138,0.45); top:0; left:0; transform:translate(-50%,-50%); transition:width 0.3s,height 0.3s; }
+.cursor { position:fixed; z-index:9999; pointer-events:none; width:10px; height:10px; border-radius:50%; background:var(--rose); top:0; left:0; transform:translate(-50%,-50%); box-shadow: 0 0 0 2px rgba(201,123,138,0.3); }
+.cursor-ring { position:fixed; z-index:9998; pointer-events:none; width:36px; height:36px; border-radius:50%; border:1.5px solid rgba(201,123,138,0.6); top:0; left:0; transform:translate(-50%,-50%); transition:width 0.3s,height 0.3s; }
 
 /* NAV */
 nav {
@@ -430,6 +430,7 @@ footer { border-top:1px solid var(--border); padding:1.8rem 3rem; display:flex; 
 /* TABLET — 1024px */
 @media (max-width: 1024px) {
   nav { padding: 1.2rem 2rem; }
+  .proj-card { cursor: auto; }
   .nav-status { display: none; }
 
   .hero { padding: 8rem 2.5rem 4rem; }
