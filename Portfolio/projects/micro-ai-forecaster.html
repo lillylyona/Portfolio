@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro AI Trend Forecaster — Lyona Manche'</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Lyona Manche<span>'</span></a>
+  <a href="../index.html" class="nav-back">← Back to work</a>
+</nav>
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="cs-eyebrow">
+    <span class="cs-tag hi">Major Project</span>
+    <span class="cs-tag">AI</span>
+    <span class="cs-tag">Python</span>
+    <span class="cs-tag">Data</span>
+    <span class="cs-live">Live ↗</span>
+  </div>
+  <h1 class="cs-title">Micro AI<br><em>Trend Forecaster</em></h1>
+  <div class="cs-hero-meta">
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Year</div>
+      <div class="cs-meta-val">2025 — 2026</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Role</div>
+      <div class="cs-meta-val">Design & Development</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Stack</div>
+      <div class="cs-meta-val">Python · HTML/CSS/JS · Machine Learning</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Status</div>
+      <div class="cs-meta-val" style="color:var(--rose);">Live</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="cs-content">
+
+  <!-- OVERVIEW -->
+  <div class="cs-section reveal">
+    <div class="cs-overview-grid">
+      <div>
+        <div class="cs-section-label">Overview</div>
+        <h2 class="cs-section-title">What it is</h2>
+        <p class="cs-body">The Micro AI Trend Forecaster is an interactive web dashboard that lets users explore fashion trend data and view AI-generated forecasts. Users upload or select a dataset, filter by category and season, and the tool surfaces trend patterns, colour distributions, and a 6-month sales forecast using a linear regression model trained on the data.</p>
+        <br>
+        <p class="cs-body">It started from a simple observation: traditional trend forecasting is expensive, slow, and locked behind large agencies. This project is an attempt to make that kind of intelligence more accessible using data that's already out there.</p>
+      </div>
+      <div class="cs-overview-right">
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">6<span>mo</span></div>
+          <div><div class="cs-stat-label">Forecast horizon</div><div class="cs-stat-sub">Linear regression model projecting 6 months forward</div></div>
+        </div>
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">3<span>+</span></div>
+          <div><div class="cs-stat-label">Datasets supported</div><div class="cs-stat-sub">Upload any fashion CSV or use built-in Zara dataset</div></div>
+        </div>
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">€29<span>.50</span></div>
+          <div><div class="cs-stat-label">Average price tracked</div><div class="cs-stat-sub">Across category, colour, and seasonal filters</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREENSHOT -->
+  <div class="cs-section reveal">
+    <div class="cs-section-label">The Product</div>
+    <h2 class="cs-section-title">Dashboard overview</h2>
+    <div class="cs-screenshot-browser">
+      <div class="cs-browser-bar">
+        <div class="cs-dot r"></div><div class="cs-dot y"></div><div class="cs-dot g"></div>
+        <span class="cs-url">micro-ai-trend-forecaster.app</span>
+      </div>
+      <img src="../images/forecaster.png" alt="Micro AI Trend Forecaster Dashboard">
+      <div class="cs-screenshot-caption">Main dashboard showing category distribution, colour breakdown, and insight cards for Zara Tops dataset</div>
+    </div>
+  </div>
+
+  <!-- KEY DECISIONS -->
+  <div class="cs-section reveal">
+    <div class="cs-section-label">Process</div>
+    <h2 class="cs-section-title">Key decisions</h2>
+    <div class="cs-decisions">
+      <div class="cs-decision">
+        <div class="cs-decision-num">01</div>
+        <div>
+          <div class="cs-decision-title">Linear regression over a more complex model</div>
+          <div class="cs-decision-body">I chose linear regression for the forecast because the dataset size didn't justify a more complex model and transparency matters here. A simple, interpretable model that shows its working is more useful to a non-technical user than a black-box neural network with slightly better accuracy.</div>
+        </div>
+      </div>
+      <div class="cs-decision">
+        <div class="cs-decision-num">02</div>
+        <div>
+          <div class="cs-decision-title">CSV upload as the core interaction</div>
+          <div class="cs-decision-body">Rather than hardcoding a dataset, I built it around CSV upload so the tool works with any fashion data, not just the Zara set I used for testing. This made the product feel genuinely useful rather than a proof of concept.</div>
+        </div>
+      </div>
+      <div class="cs-decision">
+        <div class="cs-decision-num">03</div>
+        <div>
+          <div class="cs-decision-title">Visualisation first, data second</div>
+          <div class="cs-decision-body">The dashboard leads with charts and insight cards, not raw tables. The goal was to make the output feel like a tool you'd actually use rather than a data dump , the numbers should tell a story at a glance.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER NAV -->
+<div class="cs-footer-nav">
+  <div class="cs-footer-logo">Lyona Manche<span>'</span></div>
+  <div class="cs-next">
+    <div class="cs-next-label">Next project</div>
+    <a href="closetly.html" class="cs-next-link">Closetly →</a>
+  </div>
+</div>
+
+<script src="case-study.js"></script>
+</body>
+</html>

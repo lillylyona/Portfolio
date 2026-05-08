@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Trend Dashboard — Lyona Manche'</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<nav>
+  <a href="../index.html" class="nav-logo">Lyona Manche<span>'</span></a>
+  <a href="../index.html" class="nav-back">← Back to work</a>
+</nav>
+
+<section class="cs-hero">
+  <div class="cs-eyebrow">
+    <span class="cs-tag hi">Dissertation</span>
+    <span class="cs-tag">AI</span>
+    <span class="cs-tag">Python</span>
+    <span class="cs-live">Live ↗</span>
+  </div>
+  <h1 class="cs-title">Fashion Trend<br><em>Dashboard</em></h1>
+  <div class="cs-hero-meta">
+    <div class="cs-meta-item"><div class="cs-meta-label">Year</div><div class="cs-meta-val">2025 — 2026</div></div>
+    <div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-val">Design & Development</div></div>
+    <div class="cs-meta-item"><div class="cs-meta-label">Stack</div><div class="cs-meta-val">Python · TensorFlow · HTML/CSS/JS</div></div>
+    <div class="cs-meta-item"><div class="cs-meta-label">Status</div><div class="cs-meta-val" style="color:var(--rose);">Live</div></div>
+  </div>
+</section>
+
+<div class="cs-content">
+
+  <div class="cs-section reveal">
+    <div class="cs-overview-grid">
+      <div>
+        <div class="cs-section-label">Overview</div>
+        <h2 class="cs-section-title">What it is</h2>
+        <p class="cs-body">The Fashion Trend Dashboard is my dissertation artefact — an AI system that classifies fashion images by style, colour, and pattern using a trained machine learning model. Users upload one or more garment images and the tool returns a classification with confidence scores, a trend summary, and a style distribution breakdown.</p>
+        <br>
+        <p class="cs-body">Unlike the Micro AI Trend Forecaster which works with sales data, this tool works with images directly — making it closer to how a human trend analyst would work, looking at garments rather than spreadsheets.</p>
+      </div>
+      <div class="cs-overview-right">
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">76<span>%</span></div>
+          <div><div class="cs-stat-label">Model accuracy</div><div class="cs-stat-sub">Style classification across romantic, casual, formal categories</div></div>
+        </div>
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">3<span>x</span></div>
+          <div><div class="cs-stat-label">Classification outputs</div><div class="cs-stat-sub">Colour · Pattern · Style — each with confidence score</div></div>
+        </div>
+        <div class="cs-stat-box">
+          <div class="cs-stat-num">99<span>%</span></div>
+          <div><div class="cs-stat-label">Pattern accuracy</div><div class="cs-stat-sub">Highest performing classifier in the model</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-section reveal">
+    <div class="cs-section-label">The Product</div>
+    <h2 class="cs-section-title">Classification interface</h2>
+    <div class="cs-screenshot-browser">
+      <div class="cs-browser-bar">
+        <div class="cs-dot r"></div><div class="cs-dot y"></div><div class="cs-dot g"></div>
+        <span class="cs-url">fashion-trend-dashboard.app</span>
+      </div>
+      <img src="../images/fashion.png" alt="Fashion Trend Dashboard">
+      <div class="cs-screenshot-caption">Classification results showing colour (56%), pattern (99%), and style (76%) confidence scores for a uploaded garment image</div>
+    </div>
+  </div>
+
+  <div class="cs-section reveal">
+    <div class="cs-section-label">Process</div>
+    <h2 class="cs-section-title">Key decisions</h2>
+    <div class="cs-decisions">
+      <div class="cs-decision">
+        <div class="cs-decision-num">01</div>
+        <div>
+          <div class="cs-decision-title">Three separate classifiers instead of one model</div>
+          <div class="cs-decision-body">I trained separate models for colour, pattern, and style rather than one multi-output model. This gave me better control over each classifier's accuracy and made it easier to debug when one was performing poorly — pattern accuracy hit 99% while colour was harder at 56%, which a single model would have obscured.</div>
+        </div>
+      </div>
+      <div class="cs-decision">
+        <div class="cs-decision-num">02</div>
+        <div>
+          <div class="cs-decision-title">Showing confidence scores, not just labels</div>
+          <div class="cs-decision-body">Showing the percentage alongside each classification was a deliberate design decision. It makes the AI feel honest — a 56% colour confidence communicates uncertainty in a way that just saying "neutral" doesn't. Users can make better decisions with that context.</div>
+        </div>
+      </div>
+      <div class="cs-decision">
+        <div class="cs-decision-num">03</div>
+        <div>
+          <div class="cs-decision-title">Dark UI for the dashboard</div>
+          <div class="cs-decision-body">The dark interface was a deliberate contrast to the rest of my portfolio. Fashion classification tools need to show garment colours accurately — a dark background reduces visual interference and lets the image speak. It also felt more like a professional tool than a student project.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cs-footer-nav">
+  <div class="cs-footer-logo">Lyona Manche<span>'</span></div>
+  <div class="cs-next">
+    <div class="cs-next-label">Next project</div>
+    <a href="closetly.html" class="cs-next-link">Closetly →</a>
+  </div>
+</div>
+
+<script src="case-study.js"></script>
+</body>
+</html>
