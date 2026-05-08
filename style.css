@@ -464,7 +464,7 @@ footer { border-top:1px solid var(--border); padding:1.8rem 3rem; display:flex; 
   .nav-links { gap: 1.5rem; }
   .nav-links li:nth-child(3) { display: none; } /* hide CV on mobile */
 
-  .hero { padding: 7rem 1.5rem 3rem; }
+  .hero { padding: 6rem 1.5rem 3rem; min-height: auto; }
   .hero-title { font-size: clamp(2.8rem, 10vw, 4rem) !important; }
   .hero-sub { max-width: 100%; }
   .hero-actions { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
